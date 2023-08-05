@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/item_book"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:id="@+id/book_activity">
+    android:orientation="vertical">
 
     <TextView
-        android:id="@+id/tv_book_name_book_activity"
-        style="@style/Text"
+        android:id="@+id/tv_book_name_single_book_activity"
+        style="@style/BookNameText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -19,7 +19,7 @@
         tools:text="Название" />
 
     <TextView
-        android:id="@+id/tv_author_book_activity"
+        android:id="@+id/tv_author_single_book_activity"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -29,8 +29,8 @@
         tools:text="Автор" />
 
     <TextView
-        android:id="@+id/tv_description"
-        style="@style/Text"
+        android:id="@+id/tv_description_single_book_activity"
+        style="@style/BookNameText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"

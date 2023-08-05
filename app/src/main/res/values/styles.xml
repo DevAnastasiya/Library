@@ -6,11 +6,15 @@
     </style>
 
     <style name="BookPage" parent="TextAppearance.AppCompat">
-        <item name="android:background">@color/bg_orange</item>
+        <item name="android:background">@color/bg_dark</item>
     </style>
 
-    <style name="Text" parent="TextAppearance.AppCompat">
+    <style name="BookNameText" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="AuthorText" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
     </style>
 
 </resources>

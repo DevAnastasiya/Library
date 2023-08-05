@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_books_list"
+    style="@style/BookPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BooksListActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_books_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        tools:listitem="@layout/view_holder" />
+
+</LinearLayout>
