@@ -4,7 +4,7 @@
     android:id="@+id/rv_item_view"
     style="@style/BookPage"
     android:layout_width="match_parent"
-    android:layout_height="68dp"
+    android:layout_height="64dp"
     android:layout_marginBottom="6dp"
     android:background="@drawable/view_holder_bg"
     android:orientation="vertical">
@@ -17,8 +17,6 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:paddingStart="2dp"
-        android:paddingEnd="2dp"
         tools:text="Автор" />
 
     <TextView
@@ -27,11 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginEnd="15dp"
-        android:ellipsize="end"
-        android:maxLines="1"
-        android:textColor="@color/black"
-        android:textSize="16sp"
+        android:layout_marginEnd="16dp"
         tools:text="Название книги" />
 
 </LinearLayout>

@@ -1,7 +1,6 @@
 package com.example.library
 
 import android.os.Bundle
-import android.text.method.MovementMethod
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 

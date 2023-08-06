@@ -33,5 +33,4 @@ class BookViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     // сначала мы передаем itemView в BookViewHolder, а тот передаёт его в конструктор род.класса RecyclerView.ViewHolder
     val bookNameTextView: TextView = itemView.findViewById(R.id.tv_book_name_item_view)
     val authorTextView: TextView = itemView.findViewById(R.id.tv_author_item_view)
-    //private var currentBook: Book? = null
 }
