@@ -6,14 +6,14 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 
-class BookAdapter(private val booksList: List<Book>) :
+class BookAdapter(private val booksList: List<Book>, private val onItemClickListener: OnItemClickListener) :
     RecyclerView.Adapter<BookViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): BookViewHolder {
         // создаёт и возвращает вьюхолдер
         val itemView = LayoutInflater
             .from(parent.context) // получили контекст из RV
-            .inflate(R.layout.view_holder, parent, false) // теперь ViewHolder хранит в себе вьюшку
+            .inflate(R.layout.item_view, parent, false) // теперь ViewHolder хранит в себе вьюшку
         return BookViewHolder(itemView)
     }
 
@@ -22,6 +22,10 @@ class BookAdapter(private val booksList: List<Book>) :
     override fun onBindViewHolder(holder: BookViewHolder, position: Int) {
         holder.bookNameTextView.text = booksList[position].name
         holder.authorTextView.text = booksList[position].author
+
+        holder.itemView.setOnClickListener {
+            onItemClickListener.onItemClick(position)
+        }
     }
 }
 

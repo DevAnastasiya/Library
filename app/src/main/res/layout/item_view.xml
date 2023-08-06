@@ -11,24 +11,23 @@
 
     <TextView
         android:id="@+id/tv_author_item_view"
-        style="@style/BookNameText"
+        style="@style/AuthorRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="16dp"
-        android:ellipsize="end"
-        android:maxLines="1"
-        android:textSize="12sp"
+        android:paddingStart="2dp"
+        android:paddingEnd="2dp"
         tools:text="Автор" />
 
     <TextView
         android:id="@+id/tv_book_name_item_view"
+        style="@style/BookNameRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginBottom="16dp"
         android:ellipsize="end"
         android:maxLines="1"
         android:textColor="@color/black"
