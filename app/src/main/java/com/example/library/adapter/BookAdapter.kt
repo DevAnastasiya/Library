@@ -1,10 +1,13 @@
-package com.example.library
+package com.example.library.adapter
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.library.data.Book
+import com.example.library.OnItemClickListener
+import com.example.library.R
 
 class BookAdapter(private val booksList: List<Book>, private val onItemClickListener: OnItemClickListener) :
     RecyclerView.Adapter<BookViewHolder>() {
