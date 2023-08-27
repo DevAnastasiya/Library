@@ -1,5 +1,6 @@
 package com.example.library
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -8,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.library.adapter.BookAdapter
 import com.example.library.data.Book
 import com.example.library.data.createBooksList
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class BooksListActivity : AppCompatActivity(), OnItemClickListener {
 
@@ -15,12 +17,19 @@ class BooksListActivity : AppCompatActivity(), OnItemClickListener {
     private lateinit var list: List<Book> // нужен для onItemClick()
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_books_list)
 
+        val pref = getSharedPreferences("SETTINGS", Context.MODE_PRIVATE)
+        if (pref.contains("UI_MODE").not()) {
+            val editor = pref.edit()
+            editor.putString("UI_MODE", "LIGHT")
+            editor.apply()
+        }
+
         // JSON list
         list = createBooksList(this)
-        this.list = list
 
         // RV init
         val recyclerView = findViewById<RecyclerView>(R.id.rv_books_list)
@@ -30,6 +39,13 @@ class BooksListActivity : AppCompatActivity(), OnItemClickListener {
         recyclerView.layoutManager = LinearLayoutManager(
             this, LinearLayoutManager.VERTICAL, false
         )
+
+        val btnSettings: FloatingActionButton = findViewById(R.id.btn_settings)
+
+        btnSettings.setOnClickListener {
+            val intent = Intent(this, SettingsActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     // Navigation

@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Library</string>
+    <string name="btn_settings_descr">Кнопка для перехода в настройки</string>
 </resources>

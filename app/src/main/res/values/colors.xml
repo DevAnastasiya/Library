@@ -4,6 +4,9 @@
     <color name="white">#FFFFFFFF</color>
 
     <color name="bg_orange">#EDA74B</color>
-    <color name="bg_dark_grey">#37474F</color>
+    <color name="bg_second_orange">#E8B775</color>
+    <color name="bg_grey">#37474F</color>
+    <color name="bg_dark_blue">#1E1E1E</color>
+
 
 </resources>

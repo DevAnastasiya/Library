@@ -1,8 +1,10 @@
 package com.example.library
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class BookDetailsActivity : AppCompatActivity() {
 
@@ -21,6 +23,13 @@ class BookDetailsActivity : AppCompatActivity() {
         tvBookName.text = bookName
         tvAuthor.text = author
         tvDescription.text = description
+
+        val btnSettings: FloatingActionButton = findViewById(R.id.btn_settings)
+
+        btnSettings.setOnClickListener {
+            val intent = Intent(this, SettingsActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     companion object {
