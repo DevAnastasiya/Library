@@ -2,14 +2,16 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Library" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
-        <item name="colorPrimary">@color/bg_second_orange</item>
-        <item name="colorPrimaryVariant">@color/bg_orange</item>
-        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="colorPrimary">@color/bg_second_orange</item> <!-- Фон -->
+        <item name="colorPrimaryVariant">@color/bg_orange</item> <!-- Фон эл-тов в списке -->
+        <item name="colorOnPrimary">@color/black</item> <!-- Текст в списке, описание книги -->
+
         <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/bg_grey</item>
-        <item name="colorSecondaryVariant">@color/bg_dark_blue</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondary">@color/bg_grey</item>  <!-- Обводка, название и автор -->
+        <item name="colorSecondaryVariant">@color/bg_dark_blue</item>   <!-- Фон кнопки -->
+        <item name="colorOnSecondary">@color/white</item> <!-- Текст в списке, описание книги -->
+
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/bg_orange</item>
     </style>

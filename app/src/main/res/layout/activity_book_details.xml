@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<FrameLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_book_details"
     style="@style/Background"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -23,6 +22,7 @@
 
             <TextView
                 android:id="@+id/tv_book_name_book_details_activity"
+                style="@style/BookNameText"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -30,11 +30,11 @@
                 android:layout_marginTop="16dp"
                 android:layout_marginEnd="8dp"
                 android:gravity="center"
-                android:textAppearance="@style/BookNameDetailsActivity"
                 tools:text="Название" />
 
             <TextView
                 android:id="@+id/tv_author_book_details_activity"
+                style="@style/AuthorDetailsActivity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -42,18 +42,17 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:gravity="center"
-                android:textAppearance="@style/AuthorDetailsActivity"
                 tools:text="Автор" />
 
             <TextView
                 android:id="@+id/tv_description_book_details_activity"
+                style="@style/DescriptionDetailsActivity"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="8dp"
                 android:layout_marginTop="8dp"
                 android:layout_marginEnd="8dp"
                 android:layout_marginBottom="8dp"
-                android:textAppearance="@style/DescriptionDetailsActivity"
                 tools:text="Описание" />
 
         </LinearLayout>
@@ -62,13 +61,14 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_settings"
+        style="@style/FloatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
-        android:layout_gravity="bottom|end"
         android:background="@drawable/float_btn_settings"
-        android:backgroundTint="@color/bg_grey"
+        android:contentDescription="@string/btn_settings_descr"
         android:src="@drawable/vector_settings" />
 
 </FrameLayout>

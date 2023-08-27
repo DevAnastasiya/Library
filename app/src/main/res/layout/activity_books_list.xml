@@ -9,15 +9,15 @@
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/btn_settings"
+        style="@style/FloatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="bottom|end"
         android:layout_marginEnd="16dp"
         android:layout_marginBottom="16dp"
         android:background="@drawable/float_btn_settings"
-        android:backgroundTint="@color/bg_grey"
-        android:src="@drawable/vector_settings"
-        android:contentDescription="@string/btn_settings_descr" />
+        android:contentDescription="@string/btn_settings_descr"
+        android:src="@drawable/vector_settings" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_books_list"

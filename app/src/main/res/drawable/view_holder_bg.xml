@@ -3,7 +3,7 @@
     android:shape="rectangle">
 
     <solid
-        android:color="@color/bg_orange" />
+        android:color="?attr/colorPrimaryVariant" />
 
     <corners
         android:bottomLeftRadius="12dp"
@@ -13,6 +13,6 @@
 
     <stroke
         android:width="2dp"
-        android:color="@color/bg_grey" />
+        android:color="?attr/colorSecondary" />
 
 </shape>
