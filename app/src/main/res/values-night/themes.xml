@@ -10,7 +10,7 @@
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/white</item>
         <item name="colorSecondaryVariant">@color/bg_second_orange</item>
-        <item name="colorOnSecondary">@color/black</item> <!-- Текст в списке, описание книги -->
+        <item name="colorOnSecondary">@color/black</item>
 
         <!-- Status bar color. -->
         <item name="android:statusBarColor">@color/bg_dark_blue</item>

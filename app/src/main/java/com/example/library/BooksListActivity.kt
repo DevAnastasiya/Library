@@ -4,6 +4,7 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.library.adapter.BookAdapter
@@ -22,11 +23,22 @@ class BooksListActivity : AppCompatActivity(), OnItemClickListener {
         setContentView(R.layout.activity_books_list)
 
         val pref = getSharedPreferences("SETTINGS", Context.MODE_PRIVATE)
-        if (pref.contains("UI_MODE").not()) {
-            val editor = pref.edit()
-            editor.putString("UI_MODE", "LIGHT")
-            editor.apply()
-        }
+
+//        var extra =     // Для интента в страницу настроек
+//            if (pref.contains("UI_MODE").not()) {
+//                val editor = pref.edit()
+//                editor.putString("UI_MODE", "LIGHT")
+//                editor.apply()
+//                "1"
+//            } else {
+//                if (pref.getString("UI_MODE", "LIGHT") == "LIGHT") {
+//                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+//                    "1"
+//                } else {
+//                    AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+//                    "2"
+//                }
+//            }
 
         // JSON list
         list = createBooksList(this)
