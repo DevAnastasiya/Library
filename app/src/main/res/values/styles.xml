@@ -43,7 +43,7 @@
     </style>
 
     <style name="SettingsText" parent="TextAppearance.AppCompat">
-        <item name="android:textColor">?attr/colorOnSecondary</item>
+        <item name="android:textColor">?attr/colorBackgroundFloating</item>
     </style>
 
 </resources>
