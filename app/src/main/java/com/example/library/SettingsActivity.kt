@@ -27,11 +27,14 @@ class SettingsActivity : AppCompatActivity() {
 
         if (pref.getString(UI_MODE, LIGHT) == LIGHT) {
             tvThemeSettings.text = resources.getString(R.string.light_theme_on)
+            switchCompat.isChecked = false
         } else {
             tvThemeSettings.text = resources.getString(R.string.dark_theme_on)
+            switchCompat.isChecked = true
+
         }
 
-        switchCompat.setOnClickListener {
+        switchCompat.setOnCheckedChangeListener { _, _ ->
             if (pref.getString(UI_MODE, LIGHT) == LIGHT) {
                 editor.putString(UI_MODE, DARK)
                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
